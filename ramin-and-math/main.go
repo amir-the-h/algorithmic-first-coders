@@ -52,6 +52,8 @@ func readInput(m string, a ...interface{}) bool {
 }
 
 func main() {
+	now := time.Now()
+
 	var (
 		q int
 	)
@@ -74,8 +76,6 @@ func main() {
 		series := newSeries(s, e)
 		results[i] = series.Check()
 	}
-
-	now := time.Now()
 
 	// now calculate the result and print it out
 	for _, r := range results {
