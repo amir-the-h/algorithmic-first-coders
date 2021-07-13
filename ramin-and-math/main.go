@@ -52,8 +52,6 @@ func readInput(m string, a ...interface{}) bool {
 }
 
 func main() {
-	now := time.Now()
-
 	var (
 		q int
 	)
@@ -64,6 +62,7 @@ func main() {
 			return
 		}
 	}
+	now := time.Now()
 
 	// get the input series
 	fmt.Println("Input questions: ")

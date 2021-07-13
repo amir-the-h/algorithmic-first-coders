@@ -96,9 +96,6 @@ func readInput(m string, a ...interface{}) bool {
 }
 
 func main() {
-	// main calculation
-	now := time.Now()
-
 	var (
 		n, m, q int
 	)
@@ -106,6 +103,7 @@ func main() {
 	if !readInput("Enter configuration inputs: ", &n, &m, &q) {
 		return
 	}
+	now := time.Now()
 
 	// getting schedules one by one
 	fmt.Println("Input schedules: ")
